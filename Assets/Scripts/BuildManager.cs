@@ -9,7 +9,7 @@ public class BuildManager : MonoBehaviour
     public static BuildManager instance;
 
     // This awake runs befgor start
-    // sets the static instance to this gameOnjectg
+    // sets the static instance to this gameObject
     private void Awake()
     {
 
@@ -18,11 +18,7 @@ public class BuildManager : MonoBehaviour
     }
 
     public GameObject standardTurrentPrefab;
-
-    private void Start()
-    {
-        turretToBuild = standardTurrentPrefab;
-    }
+    public GameObject missileLauncherPrefab;
 
     private GameObject turretToBuild;
 
@@ -30,6 +26,11 @@ public class BuildManager : MonoBehaviour
     {
         return turretToBuild;
 
+    }
+
+    public void SetTurretToBuild (GameObject turret)
+    {
+        turretToBuild = turret;
     }
 
 }
