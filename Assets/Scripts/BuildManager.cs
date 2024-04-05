@@ -20,15 +20,20 @@ public class BuildManager : MonoBehaviour
     public GameObject standardTurrentPrefab;
     public GameObject missileLauncherPrefab;
 
-    private GameObject turretToBuild;
+    private TurretBlueprint turretToBuild;
 
-    public GameObject GetTurretToBuild ()
+    // Basically a small function that returns if turrettoBuild is null or not
+    public bool CanBuild { get { return turretToBuild != null; } }
+
+    public void BuildTurretOn(Node someNode)
     {
-        return turretToBuild;
+        // Build a turret
+        GameObject turret = (GameObject)Instantiate(turretToBuild.prefab, someNode.GetBuildPosition(), Quaternion.identity);
+        someNode.turret = turret;
 
     }
 
-    public void SetTurretToBuild (GameObject turret)
+    public void SelectTurretToBuild(TurretBlueprint turret)
     {
         turretToBuild = turret;
     }
