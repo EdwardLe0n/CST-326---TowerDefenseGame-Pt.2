@@ -3608,17 +3608,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 902526735003251891, guid: b9aaca84ebda3ac4eb85e66a89bc997d, type: 3}
   m_PrefabInstance: {fileID: 601152077}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &463443817 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: -7359183037863341854, guid: b9aaca84ebda3ac4eb85e66a89bc997d, type: 3}
-  m_PrefabInstance: {fileID: 601152077}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 738246b80d8ffe041ac99b550f80cecd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &474015447
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4619,7 +4608,7 @@ PrefabInstance:
     - target: {fileID: 7301894889876368190, guid: b9aaca84ebda3ac4eb85e66a89bc997d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 463443817}
+      objectReference: {fileID: 1570859374}
     - target: {fileID: 7301894889876368190, guid: b9aaca84ebda3ac4eb85e66a89bc997d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: PurchaseMissileLauncher
@@ -4640,7 +4629,8 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 59560c82641c2b744927dcd60c760f11, type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -7359183037863341854, guid: b9aaca84ebda3ac4eb85e66a89bc997d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -11459,6 +11449,7 @@ GameObject:
   - component: {fileID: 1570859373}
   - component: {fileID: 1570859372}
   - component: {fileID: 1570859371}
+  - component: {fileID: 1570859374}
   m_Layer: 5
   m_Name: Shop
   m_TagString: Untagged
@@ -11551,6 +11542,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1570859369}
   m_CullTransparentMesh: 1
+--- !u!114 &1570859374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1570859369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 738246b80d8ffe041ac99b550f80cecd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  standardTurret:
+    prefab: {fileID: 1959947539374542446, guid: 914b72db5462b62499b30b5cd2ceda76, type: 3}
+    cost: 0
+  missileLauncher:
+    prefab: {fileID: 5583634106736188813, guid: faa041c73675ca84f9a23b5a9eb3f05e, type: 3}
+    cost: 0
 --- !u!1001 &1594342985
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16508,17 +16517,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 902526735003251891, guid: b9aaca84ebda3ac4eb85e66a89bc997d, type: 3}
   m_PrefabInstance: {fileID: 8174771281895144934}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2143119811 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: -7359183037863341854, guid: b9aaca84ebda3ac4eb85e66a89bc997d, type: 3}
-  m_PrefabInstance: {fileID: 8174771281895144934}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 738246b80d8ffe041ac99b550f80cecd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &2144354571
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16808,7 +16806,7 @@ PrefabInstance:
     - target: {fileID: 7301894889876368190, guid: b9aaca84ebda3ac4eb85e66a89bc997d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 2143119811}
+      objectReference: {fileID: 1570859374}
     - target: {fileID: 7301894889876368190, guid: b9aaca84ebda3ac4eb85e66a89bc997d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: PurchaseStandardTurret
@@ -16825,7 +16823,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: StandardTurretItem
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -7359183037863341854, guid: b9aaca84ebda3ac4eb85e66a89bc997d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
